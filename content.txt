@@ -1,0 +1,322 @@
+1 Introduction: Probability and Statistics . . . . . . . . . . . . . . . . . . . 1
+1.1 The Purpose of Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2 Random Variable, Variate, Event, Observation and Measurement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.3 How to Deﬁne Probability? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.4 Assignment of Probabilities to Events . . . . . . . . . . . . . . . . . . . . . 5
+1.5 Outline of this Book . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+2 Basic Probability Relations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.1 Random Events and Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.2 Probability Axioms and Theorems . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.2.1 Axioms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.2.2 Conditional Probability, Independence, and Bayes’ Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3 Probability Distributions and their Properties . . . . . . . . . . . . 15
+3.1 Deﬁnition of Probability Distributions . . . . . . . . . . . . . . . . . . . . 16
+3.1.1 Discrete Distributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.1.2 Continuous Distributions . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.1.3 Empirical Distributions . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+3.2 Expected Values . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+3.2.1 Deﬁnition and Properties of the Expected Value . . . . . . 21
+3.2.2 Mean Value . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+3.2.3 Variance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+3.2.4 Skewness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+3.2.5 Kurtosis (Excess) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+3.2.6 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+3.2.7 Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+3.3 Moments and Characteristic Functions . . . . . . . . . . . . . . . . . . . . 33
+3.3.1 Moments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+3.3.2 Characteristic Function . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+3.3.3 Cumulants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+3.3.4 Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+3.4 Transformation of Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+3.4.1 Calculation of the Transformed Density . . . . . . . . . . . . . 41
+3.4.2 Determination of the Transformation Relating two Distributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+3.5 Multivariate Probability Densities . . . . . . . . . . . . . . . . . . . . . . . . 46
+3.5.1 Probability Density of two Variables . . . . . . . . . . . . . . . . 46
+3.5.2 Moments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+3.5.3 Transformation of Variables . . . . . . . . . . . . . . . . . . . . . . . 51
+3.5.4 Reduction of the Number of Variables . . . . . . . . . . . . . . . 52
+3.5.5 Determination of the Transformation between two Distributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+3.5.6 Distributions of more than two Variables . . . . . . . . . . . . 57
+3.5.7 Independent, Identically Distributed Variables . . . . . . . 59
+3.5.8 Angular Distributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+3.6 Some Important Distributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+3.6.1 The Binomial Distribution . . . . . . . . . . . . . . . . . . . . . . . . . 62
+3.6.2 The Multinomial Distribution . . . . . . . . . . . . . . . . . . . . . . 65
+3.6.3 The Poisson Distribution . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+3.6.4 The Uniform Distribution . . . . . . . . . . . . . . . . . . . . . . . . . 69
+3.6.5 The Normal Distribution . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+3.6.6 The Exponential Distribution . . . . . . . . . . . . . . . . . . . . . . 74
+3.6.7 The χ2 Distribution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+3.6.8 The Gamma Distribution . . . . . . . . . . . . . . . . . . . . . . . . . . 78
+3.6.9 The Lorentz and the Cauchy Distributions . . . . . . . . . . . 79
+3.6.10 The Log-normal Distribution . . . . . . . . . . . . . . . . . . . . . . 80
+3.6.11 Student’s t Distribution . . . . . . . . . . . . . . . . . . . . . . . . . . 82
+3.6.12 The Extreme Value Distributions . . . . . . . . . . . . . . . . . . . 83
+3.7 Mixed and Compound Distributions . . . . . . . . . . . . . . . . . . . . . . 85
+3.7.1 Superposition of distributions . . . . . . . . . . . . . . . . . . . . . . 85
+3.7.2 Compound Distributions . . . . . . . . . . . . . . . . . . . . . . . . . . 85
+3.7.3 The Compound Poisson Distribution . . . . . . . . . . . . . . . . 87
+4 Measurement Errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91
+4.1 General Considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91
+4.1.1 Importance of Error Assignments . . . . . . . . . . . . . . . . . . . 91
+4.1.2 The Declaration of Errors . . . . . . . . . . . . . . . . . . . . . . . . . 92
+4.1.3 Deﬁnition of Measurement and its Error . . . . . . . . . . . . . 92
+4.2 Statistical Errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+4.2.1 Errors Following a Known Statistical Distribution . . . . 94
+4.2.2 Errors Determined from a Sample of Measurements . . . 95
+4.2.3 Error of the Empirical Variance . . . . . . . . . . . . . . . . . . . . 98
+4.3 Systematic Errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+4.3.1 Deﬁnition and Examples . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+4.3.2 How to Avoid, Detect and Estimate Systematic Errors 100
+4.3.3 Treatment of Systematic Errors . . . . . . . . . . . . . . . . . . . . 102
+4.4 Linear Propagation of Errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+4.4.1 Error Propagation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+4.4.2 Error of a Function of Several Measured Quantities . . . 104
+4.4.3 Averaging Uncorrelated Measurements . . . . . . . . . . . . . . 106
+4.4.4 Averaging Correlated Measurements . . . . . . . . . . . . . . . . 108
+4.4.5 Averaging Measurements with Systematic Errors . . . . . 110
+4.4.6 Several Functions of Several Measured Quantities . . . . . 112
+4.4.7 Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112
+4.5 Biased Measurements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+4.6 Conﬁdence Intervals . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+5 Monte Carlo Simulation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+5.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+5.2 Generation of Statistical Distributions . . . . . . . . . . . . . . . . . . . . 123
+5.2.1 Computer Generated Pseudo Random Numbers . . . . . . 124
+5.2.2 Generation of Distributions by Variable Transformation  126
+5.2.3 Simple Rejection Sampling . . . . . . . . . . . . . . . . . . . . . . . . 130
+5.2.4 Importance Sampling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130
+5.2.5 Treatment of Additive Probability Densities . . . . . . . . . 134
+5.2.6 Weighting Events . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 135
+5.2.7 Markov Chain Monte Carlo . . . . . . . . . . . . . . . . . . . . . . . . 136
+5.3 Solution of Integrals . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
+5.3.1 Simple Random Selection Method . . . . . . . . . . . . . . . . . . 140
+5.3.2 Improved Selection Method . . . . . . . . . . . . . . . . . . . . . . . . 142
+5.3.3 Weighting Method . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+5.3.4 Reduction to Expected Values . . . . . . . . . . . . . . . . . . . . . 145
+5.3.5 Stratiﬁed Sampling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+5.4 General Remarks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+6 Estimation I . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149
+6.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149
+6.2 Inference with Given Prior . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+6.2.1 Discrete Hypotheses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+6.2.2 Continuous Parameters . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
+6.3 Likelihood and the Likelihood Ratio . . . . . . . . . . . . . . . . . . . . . . 155
+6.4 The Maximum Likelihood Method for Parameter Inference . . 160
+6.4.1 The Recipe for a Single Parameter . . . . . . . . . . . . . . . . . . 161
+6.4.2 Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163
+6.4.3 Likelihood Inference for Several Parameters . . . . . . . . . . 168
+6.4.4 Complicated Likelihood Functions . . . . . . . . . . . . . . . . . . 171
+6.4.5 Combining Measurements . . . . . . . . . . . . . . . . . . . . . . . . . 171
+6.5 Likelihood and Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 172
+6.5.1 Suﬃciency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 172
+6.5.2 The Conditionality Principle . . . . . . . . . . . . . . . . . . . . . . . 175
+6.5.3 The Likelihood Principle . . . . . . . . . . . . . . . . . . . . . . . . . . 176
+6.5.4 Stopping Rules . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+6.6 The Moments Method . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 179
+6.7 The Least Square Method . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 183
+6.7.1 Linear Regression . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+6.8 Properties of estimators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
+6.8.1 Consistency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
+6.8.2 Transformation Invariance . . . . . . . . . . . . . . . . . . . . . . . . . 189
+6.8.3 Accuracy and Bias of Estimators . . . . . . . . . . . . . . . . . . . 189
+6.9 Comparison of Estimation Methods . . . . . . . . . . . . . . . . . . . . . . . 193
+7 Estimation II . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195
+7.1 Likelihood of Histograms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195
+7.1.1 The χ2 Approximation . . . . . . . . . . . . . . . . . . . . . . . . . . . . 197
+7.2 Extended Likelihood . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 198
+7.3 Comparison of Observations to a Monte Carlo Simulation . . . 200
+7.3.1 Motivation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 200
+7.3.2 The Likelihood Function . . . . . . . . . . . . . . . . . . . . . . . . . . 200
+7.3.3 The χ2 Approximation . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
+7.3.4 Weighting the Monte Carlo Observations . . . . . . . . . . . . 201
+7.3.5 Including the Monte Carlo Uncertainty . . . . . . . . . . . . . . 202
+7.3.6 Solution for a large number of Monte Carlo events . . . . 202
+7.4 Parameter Estimation of a Signal Contaminated by Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+7.4.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+7.4.2 Parametrization of the Background . . . . . . . . . . . . . . . . . 207
+7.4.3 Histogram Fits with Separate Background Measurement 209
+7.4.4 The Binning-Free Likelihood Approach . . . . . . . . . . . . . . 209
+7.5 Inclusion of Constraints . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 212
+7.5.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 212
+7.5.2 Eliminating Redundant Parameters . . . . . . . . . . . . . . . . . 213
+7.5.3 Gaussian Approximation of Constraints . . . . . . . . . . . . . 216
+7.5.4 The Method of Lagrange Multipliers . . . . . . . . . . . . . . . . 218
+7.5.5 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 219
+7.6 Reduction of the Number of Variates . . . . . . . . . . . . . . . . . . . . . . 220
+7.6.1 The Problem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220
+7.6.2 Two Variables and a Single Linear Parameter . . . . . . . . 220
+7.6.3 Generalization to Several Variables and Parameters . . . 221
+7.6.4 Non-linear Parameters . . . . . . . . . . . . . . . . . . . . . . . . . . . . 223
+7.7 Approximated Likelihood Estimators . . . . . . . . . . . . . . . . . . . . . . 224
+7.8 Nuisance Parameters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227
+7.8.1 Nuisance Parameters with Given Prior . . . . . . . . . . . . . . 228
+7.8.2 Factorizing the Likelihood Function . . . . . . . . . . . . . . . . . 229
+7.8.3 Parameter Transformation, Restructuring [19] . . . . . . . . 230
+7.8.4 Conditional Likelihood . . . . . . . . . . . . . . . . . . . . . . . . . . . . 233
+7.8.5 Proﬁle Likelihood . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 233
+7.8.6 Resampling Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 235
+7.8.7 Integrating out the Nuisance Parameter . . . . . . . . . . . . . 237
+7.8.8 Explicit Declaration of the Parameter Dependence . . . . 237
+7.8.9 Recommendation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237
+8 Interval Estimation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 239
+8.1 Error Intervals . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 241
+8.1.1 Parabolic Approximation . . . . . . . . . . . . . . . . . . . . . . . . . . 241
+8.1.2 General Situation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 243
+8.2 Error Propagation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 244
+8.2.1 Averaging Measurements . . . . . . . . . . . . . . . . . . . . . . . . . . 244
+8.2.2 Approximating the Likelihood Function . . . . . . . . . . . . . 247
+8.2.3 Incompatible Measurements . . . . . . . . . . . . . . . . . . . . . . . 249
+8.2.4 Error Propagation for a Scalar Function of a Single Parameter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 249
+8.2.5 Error Propagation for a Function of Several Parameters250
+8.3 One-sided Conﬁdence Limits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 255
+8.3.1 General Case . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 255
+8.3.2 Upper Poisson Limits, Simple Case . . . . . . . . . . . . . . . . . 256
+8.3.3 Poisson Limit for Data with Background . . . . . . . . . . . . 257
+8.3.4 Unphysical Parameter Values . . . . . . . . . . . . . . . . . . . . . . 259
+8.4 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 260
+9 Unfolding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 261
+9.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 261
+9.2 Discrete Inverse Problems and the Response matrix . . . . . . . . . 262
+9.2.1 Introduction and deﬁnition . . . . . . . . . . . . . . . . . . . . . . . . 262
+9.2.2 The Histogram Representation . . . . . . . . . . . . . . . . . . . . . 263
+9.2.3 Expansion of the True Distribution . . . . . . . . . . . . . . . . . 267
+9.2.4 The Least Square Solution and the Eigenvector Decomposition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 268
+9.2.5 The Maximum Likelihood Approach . . . . . . . . . . . . . . . . 274
+9.3 Unfolding with Explicit Regularization . . . . . . . . . . . . . . . . . . . . 275
+9.3.1 General considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . 275
+9.3.2 Variable Dependence and Correlations . . . . . . . . . . . . . . 276
+9.3.3 Choice of the Regularization Strength . . . . . . . . . . . . . . . 277
+9.3.4 Error Assignment to Unfolded Distributions . . . . . . . . . 279
+9.3.5 EM Unfolding with Early Stopping . . . . . . . . . . . . . . . . . 280
+9.3.6 SVD based methods [68, 78] . . . . . . . . . . . . . . . . . . . . . . . 283
+9.3.7 Penalty regularization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 285
+9.3.8 Comparison of the Methods . . . . . . . . . . . . . . . . . . . . . . . 287
+9.3.9 Spline approximation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 289
+9.3.10 Statistical and Systematic Uncertainties of theResponse Matrix . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 290
+9.4 Unfolding with Implicit Regularization . . . . . . . . . . . . . . . . . . . . 293
+9.5 Inclusion of Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 295
+9.6 Summary and Recommendations for the Unfolding of Histograms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 295
+9.7 Binning-free Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 296
+9.7.1 Iterative Unfolding Based on Probability Density Estimation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 297
+9.7.2 The Satellite Method . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 298
+9.7.3 The Maximum Likelihood Method . . . . . . . . . . . . . . . . . . 300
+9.7.4 Summary for Binning-free Methods . . . . . . . . . . . . . . . . . 302
+10 Hypothesis Tests and Signiﬁcance of Signals . . . . . . . . . . . . . . 303
+10.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 303
+10.2 Some Deﬁnitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 304
+10.2.1 Single and Composite Hypotheses . . . . . . . . . . . . . . . . . . 304
+10.2.2 Test Statistic, Critical Region and Signiﬁcance Level . . 304
+10.2.3 Consistency and Bias of Tests . . . . . . . . . . . . . . . . . . . . . . 307
+10.2.4 P -Values . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 308
+10.3 Classiﬁcation problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 312
+10.4 Goodness-of-Fit Tests . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 313
+10.4.1 General Remarks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 313
+10.4.2 The χ2 Test in Generalized Form . . . . . . . . . . . . . . . . . . . 315
+10.4.3 The Likelihood Ratio Test . . . . . . . . . . . . . . . . . . . . . . . . . 323
+10.4.4 The Kolmogorov–Smirnov Test . . . . . . . . . . . . . . . . . . . . . 325
+10.4.5 Tests of the Kolmogorov–Smirnov – and Cramer–von Mises Families . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 328
+10.4.6 Neyman’s Smooth Test . . . . . . . . . . . . . . . . . . . . . . . . . . . . 328
+10.4.7 The L2 Test . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 330
+10.4.8 Comparing a Data Sample to a Monte Carlo Sample and the Metric . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 331
+10.4.9 The k-Nearest Neighbor Test . . . . . . . . . . . . . . . . . . . . . . 332
+10.4.10 The Energy Test . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 333
+10.4.11 Tests Designed for Speciﬁc Problems . . . . . . . . . . . . . . . 336
+10.4.12 Comparison of Tests . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 337
+10.5 Two-Sample Tests . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 339
+10.5.1 The Problem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 339
+10.5.2 The χ2 Test . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 340
+10.5.3 The Likelihood Ratio Test . . . . . . . . . . . . . . . . . . . . . . . . . 340
+10.5.4 The Kolmogorov–Smirnov Test . . . . . . . . . . . . . . . . . . . . . 341
+10.5.5 The Energy Test . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 341
+10.5.6 The k-Nearest Neighbor Test . . . . . . . . . . . . . . . . . . . . . . 343
+10.6 Signiﬁcance of Signals . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 343
+10.6.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 343
+10.6.2 The Likelihood Ratio Test . . . . . . . . . . . . . . . . . . . . . . . . . 346
+10.6.3 Tests Based on the Signal Strength . . . . . . . . . . . . . . . . . 351
+11 Statistical Learning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 353
+11.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 353
+11.2 Smoothing of Measurements and Approximation by Analytic Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 356
+11.2.1 Smoothing Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 357
+11.2.2 Approximation by Orthogonal Functions . . . . . . . . . . . . 359
+11.2.3 Wavelets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 364
+11.2.4 Spline Approximation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 366
+11.2.5 Approximation by a Combination of Simple Functions 369
+11.2.6 Example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 369
+11.3 Linear Factor Analysis and Principal Components . . . . . . . . . . 371
+11.4 Classiﬁcation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 376
+11.4.1 The Discriminant Analysis . . . . . . . . . . . . . . . . . . . . . . . . . 379
+11.4.2 Artiﬁcial Neural Networks . . . . . . . . . . . . . . . . . . . . . . . . . 380
+11.4.3 Weighting Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
+11.4.4 Decision Trees . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 391
+11.4.5 Bagging and Random Forest . . . . . . . . . . . . . . . . . . . . . . . 395
+11.4.6 Comparison of the Methods . . . . . . . . . . . . . . . . . . . . . . . 396
+12 Auxiliary Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 399
+12.1 Probability Density Estimation . . . . . . . . . . . . . . . . . . . . . . . . . . . 399
+12.1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 399
+12.1.2 Fixed Interval Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . 400
+12.1.3 Fixed Number and Fixed Volume Methods . . . . . . . . . . 404
+12.1.4 Kernel Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 404
+12.1.5 Problems and Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . 405
+12.2 Resampling Techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 407
+12.2.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 407
+12.2.2 Deﬁnition of Bootstrap and Simple Examples . . . . . . . . 408
+12.2.3 Precision of the Error Estimate . . . . . . . . . . . . . . . . . . . . 411
+12.2.4 Conﬁdence Limits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+12.2.5 Precision of Classiﬁers . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+12.2.6 Random Permutations . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+12.2.7 Jackknife and Bias Correction . . . . . . . . . . . . . . . . . . . . . . 413
+13 Appendix . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 415
+13.1 Large Number Theorems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 415
+13.1.1 Chebyshev Inequality and Law of Large Numbers . . . . 415
+13.1.2 Central Limit Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . 416
+13.2 Consistency, Bias and Eﬃciency of Estimators . . . . . . . . . . . . . 417
+13.2.1 Consistency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 417
+13.2.2 Bias of Estimates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 418
+13.2.3 Eﬃciency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 418
+13.3 Properties of the Maximum Likelihood Estimator . . . . . . . . . . . 420
+13.3.1 Consistency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 420
+13.3.2 Eﬃciency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 421
+13.3.3 Asymptotic Form of the Likelihood Function . . . . . . . . . 422
+13.3.4 Properties of the Maximum Likelihood Estimate for Small Samples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 423
+13.4 The Expectation Maximization (EM) Algorithm . . . . . . . . . . . . 424
+13.5 Consistency of the Background Contaminated Parameter Estimate and its Error . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 427
+13.6 Frequentist Conﬁdence Intervals . . . . . . . . . . . . . . . . . . . . . . . . . . 430
+13.7 Comparison of Diﬀerent Inference Methods . . . . . . . . . . . . . . . . 433
+13.7.1 Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 433
+13.7.2 The Frequentist Approach . . . . . . . . . . . . . . . . . . . . . . . . . 436
+13.7.3 The Bayesian Approach . . . . . . . . . . . . . . . . . . . . . . . . . . . 436
+13.7.4 The Likelihood Ratio Approach . . . . . . . . . . . . . . . . . . . . 437
+13.7.5 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 437
+13.7.6 Consistency, Eﬃciency, Bias . . . . . . . . . . . . . . . . . . . . . . . 437
+13.8 p-values for EDF-Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 438
+13.9 Fisher–Yates shuﬄe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 441
+13.10 Comparison of Histograms Containing Weighted Events . . . . 441
+13.10.1 Comparison of two Poisson Numbers with Diﬀerent Normalization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 441
+13.10.2 Comparison of Weighted Sums . . . . . . . . . . . . . . . . . . . . 442
+13.10.3 χ2 of Histograms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 442
+13.10.4 Parameter Estimation . . . . . . . . . . . . . . . . . . . . . . . . . . . . 444
+13.11 The Compound Poisson Distribution and Approximations of it . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 444
+13.11.1 Equivalence of two Deﬁnitions of the CPD . . . . . . . . . . 444
+13.11.2 Approximation by a Scaled Poisson Distribution . . . . . 445
+13.11.3 The Poisson Bootstrap . . . . . . . . . . . . . . . . . . . . . . . . . . . 448
+13.12 Extremum Search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 448
+13.12.1 Monte Carlo Search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 448
+13.12.2 The Simplex Algorithm . . . . . . . . . . . . . . . . . . . . . . . . . . 449
+13.12.3 Parabola Method . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 450
+13.12.4 Method of Steepest Descent . . . . . . . . . . . . . . . . . . . . . . 450
+13.12.5 Stochastic Elements in Minimum Search . . . . . . . . . . . 452
+13.13 Linear Regression with Constraints . . . . . . . . . . . . . . . . . . . . . . 452
+13.14 Formulas Related to the Polynomial Approximation . . . . . . . 454
+13.15 Formulas for B-Spline Functions . . . . . . . . . . . . . . . . . . . . . . . . . 455
+13.15.1 Linear B-Splines . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 455
+13.15.2 Quadratic B-Splines . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 455
+13.15.3 Cubic B-Splines . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
+13.16 Support Vector Classiﬁers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
+13.16.1 Linear Classiﬁers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
+13.16.2 General Kernel Classiﬁers . . . . . . . . . . . . . . . . . . . . . . . . . 458
+13.17 Bayes Factor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 459
+13.18 Robust Fitting Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 461
+13.18.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 461
+13.18.2 Robust Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 462
+
